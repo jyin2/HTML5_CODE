@@ -14,7 +14,7 @@
   font-family: 'Abel', sans-serif;
   position:absolute;
   top:20%;
-  left:15%;
+  left:20%;
   color:#2352B0;
 
 }
@@ -34,6 +34,7 @@
   padding: 16px 32px;
   text-align:center;
   display: inline-block;
+
   font-size: 16px;
       margin: 4px 2px;
       -webkit-transition-duration: 0.4s;
@@ -42,6 +43,7 @@
       text-decoration: none;
       text-transform: uppercase;
 }
+
 .btn1 {
       background-color: white;
       color: black;
@@ -60,7 +62,7 @@
   border: 2px solid #C63131;
   border-radius: 6px;
   border:none
-  color:white;
+  color:black;
   padding: 16px 32px;
   text-align:center;
   display: inline-block;
@@ -130,4 +132,12 @@ img.instagram{
   position: fixed;
   left: 90%;
   color: white;
+}
+.hey{
+  position:absolute;
+  top:20%;
+  left:30%;
+}
+.heman{
+  background-image: url("https://i.pinimg.com/originals/dc/8b/e4/dc8be4a4c7d53c82dad38c608b6ab07a.jpg");
 }
