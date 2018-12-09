@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+*{
+  margin:0;
+  padding:0;
+}
+.body{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  background-image: url();
+}
+
+.title{
+  font-size: 50px;
+  font-family: 'Abel', sans-serif;
+  position:absolute;
+  top:20%;
+  left:15%;
+  color:#2352B0;
+
+}
+.btn:hover {
+  background: black;
+  color:white;
+}
+.btn{
+  position:relative;
+  top:440px;
+  left:40%;
+  color:black;
+  background: transparent;
+  border: 2px solid black;
+  border:none
+  color:black;
+  padding: 16px 32px;
+  text-align:center;
+  display: inline-block;
+  font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.btn1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+}
+.btn2:hover {
+  background: #AF2525;
+  text-decoration: none;
+}
+.btn2{
+  position:relative;
+  top:430px;
+  left:400px;
+  color:#C63131;
+  background: transparent;
+  border: 2px solid #C63131;
+  border-radius: 6px;
+  border:none
+  color:white;
+  padding: 16px 32px;
+  text-align:center;
+  display: inline-block;
+  font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.btn2 {
+      background-color: white;
+      color: #C63131;
+      border: 2px solid #C63131;
+}
+a:visited{
+  color:white;
+}
+.list{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  position:fixed;
+  list-style: none;
+  display: flex;
+  background-color: white;
+  width:100%;
+
+
+
+}
+img.twitter{
+  width: 40px;
+  height:40px;
+}
+.image{
+  position:absolute;
+  top: center;
+  left:40%;
+  padding:15px;
+}
+img.instagram{
+  width: 75px;
+  height: 75px;
+}
+.image_1{
+  position:absolute;
+  top:center;
+  left:45%;
+
+}
+.t{
+  padding:20px;
+  color:white;
+
+}
+.s{
+  padding:20px;
+  color: white;
+}
+.w{
+  padding: 20px;
+  color:white;
+}
+.z{
+  padding:20px;
+  position: fixed;
+  left: 90%;
+  color: white;
+}
