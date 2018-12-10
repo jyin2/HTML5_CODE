@@ -141,3 +141,50 @@ img.instagram{
 .heman{
   background-image: url("https://i.pinimg.com/originals/dc/8b/e4/dc8be4a4c7d53c82dad38c608b6ab07a.jpg");
 }
+img.first{
+  width:400px;
+  height:600px;
+  position:absolute;
+  top:20%;
+  left:30%;
+}
+ .colors{
+   animation:colorchange 3s infinite;
+ }
+ @keyframes colorchange{
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+img.stug{
+  width:100px;
+  height: 200px;
+}
+.stug{
+  position:absolute;
+  top:90px;
+
+}
