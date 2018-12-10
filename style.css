@@ -88,8 +88,25 @@ a:visited{
   position:fixed;
   list-style: none;
   display: flex;
-  background-color: white;
   width:100%;
+  background-color: white;
+}
+.list1{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  position:fixed;
+  list-style: none;
+  display: flex;
+  width:100%;
+  animation:colorchane .5s infinite;
+}
+@keyframes colorchane{
+  0%{
+    background-color: white;
+  }
+  100%{
+    background-color: black;
+  }
 
 
 
@@ -142,14 +159,34 @@ img.instagram{
   background-image: url("https://i.pinimg.com/originals/dc/8b/e4/dc8be4a4c7d53c82dad38c608b6ab07a.jpg");
 }
 img.first{
-  width:400px;
-  height:600px;
-  position:absolute;
   top:20%;
   left:30%;
 }
+.first{
+  width:200px;
+    height:200px;
+    position:relative;
+    -webkit-animation:myfirst 5s infinite; /* Chrome, Safari, Opera */
+    animation:myfirst 5s infinite;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfirst
+    {
+    0%   { left:0px; top:300px;-webkit-transform:rotate(0deg)}
+    50%  {left:100%; margin-left:-100px;-webkit-transform:rotate(360deg)}
+    100% {left:0px; top:300px;-webkit-transform:rotate(0deg)}
+    }
+
+    /* Standard syntax */
+    @keyframes myfirst
+    {
+    0%   { left:0px; top:300px;transform:rotate(0deg)}
+    50%  {left:100%; margin-left:-100px;transform:rotate(360deg)}
+    100% {left:0px; top:300px;transform:rotate(0deg)}
+}
  .colors{
-   animation:colorchange 3s infinite;
+   animation:colorchange .5s infinite;
  }
  @keyframes colorchange{
     0% {
@@ -187,4 +224,19 @@ img.stug{
   position:absolute;
   top:90px;
 
+}
+.myVideo {
+  position: fixed;
+  width:100%;
+  height:100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
