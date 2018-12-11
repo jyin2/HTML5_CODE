@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" description="John">
+  <meta name="viewport" description="width=device-width, initial-scale=1">
+  <title>TEDxShaker</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+    <nav>
+      <ul class="list">
+        <li><div class="t"><a href="Events.html"style="color:black">Events</a></div></li>
+        <li><div class="s"><a href="aboutus.html"style="color:black">About Us</a></div></li>
+        <li><div class= "w"><a href="https://imgix.bustle.com/uploads/image/2018/9/27/b2655359-f3c4-436e-b7dc-7ceb3d528dfd-dj92z5rvsaa7uku.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70" style="color:black">Gallery</a></div><li>
+        <li><div class="z"><a href="index2.html" style="color:black">Home</a></div></li>
+        <li><div class="image"><a href="https://www.twitter.com" target="_blank"><img class="twitter" alt="Twiiter" src="https://img.icons8.com/metro/1600/twitter.png"></a>
+        <li><div class="image_1"><a href="https://www.instagram.com" target="_blank"><img class="instagram" alt="Instagram" src="https://cdn0.iconfinder.com/data/icons/social-media-2119/154/instagram-512.png"></a>
+        <li><div class="q"><a href="random.html" style="color:black">Random</a></div></li>
+        </ul>
+      </nav>
+      <body>
+      <!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <h1>Weebs suck</h1>
+  <p>weeaboo crap</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+</html>
