@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="This a coooool website">
-    <meta name="author" content="John YINNNY">
-    <meta name="keywords" content="HTML5">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John's Website</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <div class= "stuff">
-  <body style="background-color:lightblue">
-    <header class="things">
-    <h3 id="main-header"> HOME PAGE </h3>
-  </header>
-  <nav class="wart">
-    <ul>
-      <li><div class="th"><a href="page2.html">Page 2</a><div></li>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" description="John">
+  <meta name="viewport" description="width=device-width, initial-scale=1">
+  <title>TEDxShaker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 
-      <li><a href="Pictures/page3.html">Page 3 </a></li>
+}
 
-      <li><a href="mars.png">Cool Mars Pic</a></li>
-    </ul>
-</nav>
-    <p style="color:darkgreen;">fwfeewfwfwefwefewfwefewf</p>
-    <h3>Please submit file</h3>
-    <h4 class="blue"> CSS is fun </h4>
-    <input type="text"></input>
-</div>
-<div class="box">
-</div>
-<aside class="hr">
-  <p>blah</p>
-</aside>
-<footer class="lol">
-  <a href="page2.html">About</a>
-  <p>Contact us</p>
-  <p>lol</p>
-</footer>
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #black;
+}
 
-  </body>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+    <nav>
+      <ul class="list">
+        <li><div class="t"><a href="Events2.html"style="color:black">Events</a></div></li>
+        <li><div class="s"><a href="aboutus.html"style="color:black">About Us</a></div></li>
+        <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">FAQ</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="howtoapply.html">How to Apply</a>
+    </div>
+  </div>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+        <li><div class="z"><a href="index.html" style="color:black">Home</a></div></li>
+        <li><div class="image_1"><a href="https://www.instagram.com/tedxshs/" target="_blank"><img class="instagram" alt="Instagram" src="https://cdn0.iconfinder.com/data/icons/social-media-2119/154/instagram-512.png"></a>
+        </ul>
+        <script>
+        $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
+      </nav>
+      <body class="body">
+        <div class="title">
+          <img src="Pictures/TEDxShaker1.png" alt="Title">
+        </div>
+            <section id="section05" class="demo">
+              <h1></h1>
+              <a href="#section06"><span></span>Scroll</a>
+            </section>
+            <section id="section06" class="demo">
+              <h1 id="legit2" class="mission"><b>Shaker TedX aims to educate all people willing to
+                gain a new perspective on the world.</b></h1>
+              <h1 id="legit3" class="mission"><b>We are specifically focused on the impact of student perspectives on others.</b></h1>
+                <h1 id="legit" class="mission"><b>We strive to do this by creating a conference solely featuring dedicated, engaged student Ted speakers.</b></h1>
+              <a href="#section07"><span></span>Scroll</a>
+            </section>
+            <section id="section07" class="demo">
+              <h1><h1 id="legit2" class="mission1"><b>TEDxShakerHS is a event created by students at Shaker High School to provide a platform for dedicated, engaged student speakers to spread their ideas. </b></h1>
+              <h1 id="legit3" class="mission1"><b>The conference will be help March 29th and will consist of speeches ranging from mental health awareness to artistic endeavors such as music and storytelling.</b></h1>
+                <h1 id="legit" class="mission1"><b>TEDxShakerHS is an independently organized event under a free license granted by TED that brings the spirit of TED’s mission: ideas worth spreading.</b></h1></h1>
+              <a href="#section05"><span></span><span></span><span></span>Scroll</a>
+            </section>
+      </body>
 </html>
