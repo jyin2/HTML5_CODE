@@ -14,7 +14,7 @@
   font-family: 'Abel', sans-serif;
   position:absolute;
   top:20%;
-  left:20%;
+  left:15%;
   color:#2352B0;
 
 }
@@ -1191,16 +1191,37 @@ to {opacity:1;}
 from {opacity:0;}
 to {opacity:1;}
 }
+#legit_{
+  color: black;
+  font-family: "Courier";
+  font-size: 25px;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 5.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes fade-in{
+from { opacity:0;}
+to {opacity:1;}
+}
+
+@-webkit-keyframes fade-in{
+from {opacity:0;}
+to {opacity:1;}
+}
 .mission{
   position: relative;
-  top:40%
-  left:30%;
+  top:40%;
+  left:20%;
 }
+
 .mission1{
   position: relative;
   top:50%;
-  left:30%;
+  left:500px;
 }
+
 .content-1{
   position: relative;
   padding:10px;
@@ -1213,11 +1234,79 @@ to {opacity:1;}
 }
 .invite{
   position: relative;
-  top:20%;
+  top:10%;
   padding: 10px;
 }
 .invite-1{
   position: relative;
   padding:10px;
-  top:20%;
+  top:10%;
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
 }

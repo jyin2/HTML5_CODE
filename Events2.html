@@ -20,7 +20,25 @@
 .dropbtn:hover, .dropbtn:focus {
   background-color: #black;
 }
+.dropbtn-1 {
+  background-color: black;
+  color: white;
+  padding: 17px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 
+}
+
+.dropbtn-1:hover, .dropbtn-1:focus {
+  background-color: #black;
+}
+.dropdown-1 {
+  position: absolute;
+  top:11%;
+  left:21%;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -42,10 +60,138 @@
   text-decoration: none;
   display: block;
 }
+.q-1{
+  position: relative;
+  top:15%;
+  left:10%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+
+}
 
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=name] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: black;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: #black;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.pos{
+  position: relative;
+  top:20%;
+  left:10%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
 </style>
 </head>
     <nav>
@@ -58,7 +204,7 @@
       <a href="howtoapply.html">How to Apply</a>
     </div>
   </div>
-
+  <div class="dropdown-1"><li><div class="dropbtn-1"><a href="formpage1.html"style="color:white;text-decoration:none;">RSVP</a></div></div></li>
   <script>
   /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
@@ -93,12 +239,7 @@
 </script>
       </nav>
       <body>
-         <div class="invite"><h1>Date:March 29th<h1></div>
+         <div class="invite"><h1>Date:April 5th<h1></div>
            <div class="invite-1"><h1>Location:Shaker High School<h1></div>
-           <form>
-             <input class="btn" type"button" value="Apply Now" onclick="window.location.href='howtoapply.html'"/>
-           </form>
-             <div class="p1">
-               </div>
              </body>
              </html>
